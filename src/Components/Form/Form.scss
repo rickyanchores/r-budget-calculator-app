@@ -1,0 +1,15 @@
+.Form{
+    display: flex;
+    input{
+        background: #333;
+    }
+    button{
+        background: coral;
+        padding: 1em;
+        border-radius: 12px;
+    }
+    button:hover{
+        background-color: rgb(226, 124, 87);
+        cursor: pointer;
+    }
+}

@@ -2,41 +2,27 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Results from './Components/Results/Results'
+import Form from './Components/Form/Form'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const [salary,setSalary] = useState("")
+  const [extraSalary,setExtraSalary] = useState("")
+  const [totSalary,setTotSalary] = useState("")
+
   return (
     <>
       <div>
-        <h1 className="bg-red-700">Ricky Personal Boiler Plate</h1>
-        <ul>
-          <li>React</li>
-          <li>Tailwindcss</li>
-          <li>SCSS</li>
-          <p>To use Lottie animations install:</p>
-          <p>npm i lottie-react</p>
-          <p>visit:</p> <a href="https://lottiefiles.com/featured?utm_medium=web&utm_source=navigation-featured">LottieFiles</a>
-        </ul>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h1 className="bg-slate-900 p-5 rounded-lg">r-budget-calculator</h1>
+        <div className="main-container p-20">
+          <Results salary={salary} setSalary={setSalary} extraSalary={extraSalary} setExtraSalary={setExtraSalary} totSalary={totSalary} setTotSalary={setTotSalary}/>
+          <Form salary={salary} setSalary={setSalary} extraSalary={extraSalary} setExtraSalary={setExtraSalary} totSalary={totSalary} setTotSalary={setTotSalary}/>
+        </div>
+        <p>Developed by Ricky A</p>
+      </div>  
+
     </>
   )
 }

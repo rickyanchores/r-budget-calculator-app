@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Imports
+@import "./Components/Form/Form.scss";
+@import "./Components/Results/Results.scss";
+
+body{
+  background: black;
+  color: whitesmoke;
+  font-family: monospace,sans-serif;
+}
+
+.main-container{
+  display: flex;
+  justify-content: space-around;
+}
