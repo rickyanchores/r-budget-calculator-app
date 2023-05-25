@@ -1,23 +1,24 @@
 import React from 'react'
 
-const Form = ({salary,setSalary,extraSalary,setExtraSalary}) => {
+const Form = ({salary,setSalary,extraSalary,setExtraSalary,setTotResult}) => {
 
-    //EVENT Handlers
-
-    const inputSalary = (e) => {
-        console.log(e.target.value)
-        setSalary(e.target.value)
-    }
-    const inputExtraSalary = (e) => {
-        console.log(e.target.value)
-        setExtraSalary(e.target.value)
-    }
-
-    const next = (e) => {
-        e.preventDefault(e)
-        console.log("Next")
-    }
-
+  //Events
+  const inputSalary = (e) => {
+    console.log(e.target.value);
+    setSalary(e.target.value);
+  };
+  const inputExtraSalary = (e) => {
+    console.log(e.target.value);
+    setExtraSalary(e.target.value);
+  };
+  // Button Event
+  const next = (e) => {
+    e.preventDefault(e);
+    console.log("click");
+    setSalary("");
+    setExtraSalary("");
+    setTotResult(Number(salary) + Number(extraSalary))
+  };
 
   return (
     <form className='Form p-20 flex-col'>

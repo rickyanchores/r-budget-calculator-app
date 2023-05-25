@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Results = () => {
+const Results = ({totResult}) => {
   return (
     <div className='Results p-20 rounded-lg'>
         <h3>Monthly Income</h3>
@@ -12,7 +12,7 @@ const Results = () => {
             </ul>
             <h3>Monthly Expenses</h3>
         </div>
-        <h3>Total: totSalary</h3>
+        <h3>Total: {totResult}</h3>
     </div>
   )
 }

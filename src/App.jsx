@@ -10,15 +10,28 @@ function App() {
 
   const [salary,setSalary] = useState("")
   const [extraSalary,setExtraSalary] = useState("")
-  const [totSalary,setTotSalary] = useState("")
+
+  const [totResult,setTotResult] = useState("")  
 
   return (
     <>
       <div>
-        <h1 className="bg-slate-900 p-5 rounded-lg">r-budget-calculator</h1>
-        <div className="main-container p-20">
-          <Results salary={salary} setSalary={setSalary} extraSalary={extraSalary} setExtraSalary={setExtraSalary} totSalary={totSalary} setTotSalary={setTotSalary}/>
-          <Form salary={salary} setSalary={setSalary} extraSalary={extraSalary} setExtraSalary={setExtraSalary} totSalary={totSalary} setTotSalary={setTotSalary}/>
+        <h1 className="p-5 rounded-lg bg-purple-800 font-bold text-lg">r-budget-calculator</h1>
+        <div className="main-container p-20 flex-wrap">
+          <Results
+            salary={salary}
+            setSalary={setSalary}
+            extraSalary={extraSalary} 
+            setExtraSalary={setExtraSalary} 
+            totResult={totResult}
+            setTotResult={setTotResult}/>
+          <Form 
+            salary={salary}
+            setSalary={setSalary}
+            extraSalary={extraSalary}
+            setExtraSalary={setExtraSalary}
+            setTotResult={setTotResult}
+          />
         </div>
         <p>Developed by Ricky A</p>
       </div>  
