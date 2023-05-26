@@ -5,16 +5,16 @@ const Results = ({totResult}) => {
     <div className='Results p-20 rounded-lg'>
         <h3>Monthly Income</h3>
         <div className="expenses">
-            <ul>
+            <ul className=" bg-zinc-800 flex-col rounded-lg p-5 m-2">
                 <li>housing</li>
                 <li>transportation</li>
                 <li>savings</li>
             </ul>
-            <h3>Monthly Expenses</h3>
+            <h3 className="p-2">Monthly Expenses</h3>
         </div>
         <h3>Total: {totResult}</h3>
     </div>
   )
 }
 
-export default Results
+export default Results;
