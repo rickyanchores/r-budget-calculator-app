@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="p-5 rounded-lg bg-purple-800 font-bold text-lg">r-budget-calculator</h1>
+        <h1 className="p-5 rounded-lg  bg-violet-800 font-bold text-lg">r-budget-calculator</h1>
         <div className="main-container p-20 flex-wrap">
           <Results
             salary={salary}
@@ -24,7 +24,8 @@ function App() {
             extraSalary={extraSalary} 
             setExtraSalary={setExtraSalary} 
             totResult={totResult}
-            setTotResult={setTotResult}/>
+            setTotResult={setTotResult}
+          />
           <Form 
             salary={salary}
             setSalary={setSalary}

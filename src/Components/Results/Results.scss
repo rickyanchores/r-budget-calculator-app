@@ -1,7 +1,17 @@
 .Results{
     background: #333;
     text-align: start;
-    h3{
+    .Total{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
         font-weight: bolder;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+        //color: coral;
     }
 }
