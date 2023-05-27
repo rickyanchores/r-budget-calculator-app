@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Results = ({totResult}) => {
+
+  const need50 = Math.round(totResult / 100 *50)
+  const want30 = Math.round(totResult / 100 *30)
+  const save20 = Math.round(totResult / 100 *20)
+
   return (
     <div className='Results p-20 rounded-lg'>
         <h2>Monthly Income</h2>
@@ -11,6 +16,24 @@ const Results = ({totResult}) => {
                 <li>savings</li>
             </ul>
             <h2 className="p-2">Monthly Expenses</h2>
+        </div>
+        <div className="budget101 bg-slate-600 p-3 rounded-lg">
+          <h3>Budget 101</h3>
+          <p>50/30/20 Ideal</p>
+          <ul className='mt-2'>
+            <li>
+              <h3>Needs 50%</h3>
+              <div className="needs">£ {need50}</div>
+            </li>
+            <li>
+              <h3>Wants 30%</h3>
+              <div className="wants">£ {want30}</div>
+            </li>
+            <li>
+              <h3>Savings 20%</h3>
+              <div className="wants">£ {save20}</div>
+            </li>
+          </ul>
         </div>
         <div className="Total mt-8">
           <h2>Total:</h2>

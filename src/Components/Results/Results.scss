@@ -1,6 +1,17 @@
 .Results{
     background: #333;
     text-align: start;
+
+    .budget101{
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.2em;
+        }
+    }
+
+
     .Total{
         display: flex;
         justify-content: center;
