@@ -8,16 +8,17 @@ const Results = ({totResult}) => {
 
   return (
     <div className='Results p-20 rounded-lg'>
-        <h2>Monthly Income</h2>
+        
         <div className="expenses">
+          <h2>Expenses</h2>
             <ul className=" bg-zinc-800 flex-col rounded-lg p-5">
                 <li>housing</li>
                 <li>transportation</li>
                 <li>savings</li>
             </ul>
-            <h2 className="p-2">Monthly Expenses</h2>
+            <h2>Monthly Expense: </h2>
         </div>
-        <div className="budget101 bg-slate-600 p-3 rounded-lg">
+        <div className="budget101 bg-slate-600 p-3 mt-1 rounded-lg">
           <h3>Budget 101</h3>
           <p>50/30/20 Ideal</p>
           <ul className='mt-2'>
@@ -36,7 +37,7 @@ const Results = ({totResult}) => {
           </ul>
         </div>
         <div className="Total mt-8">
-          <h2>Total:</h2>
+          <h2>Total Income:</h2>
           <h1 className='ml-2'>£{totResult}</h1>
         </div>
         
