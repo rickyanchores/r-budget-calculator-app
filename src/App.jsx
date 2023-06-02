@@ -4,11 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Results from './Components/Results/Results'
 import Form from './Components/Form/Form'
-import ExpenseForm from './Components/ExpenseForm/ExpenseForm'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   const [salary,setSalary] = useState("")
   const [extraSalary,setExtraSalary] = useState("")
   const [totResult,setTotResult] = useState("")  
@@ -36,7 +34,6 @@ function App() {
             setExtraSalary={setExtraSalary}
             setTotResult={setTotResult}
           />
-          <ExpenseForm />
         </div>
         <p>Developed by Ricky A</p>
       </div>  
