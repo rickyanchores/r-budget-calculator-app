@@ -22,7 +22,7 @@ const Form = ({salary,setSalary,extraSalary,setExtraSalary,setTotResult}) => {
 
   return (
     <form className='Form p-20 flex-col'>
-        <h1>Monthly Income</h1>
+        <h1 className="text-2xl font-bold">Monthly Income</h1>
         <input value={salary} type="text" className="inputSalary p-5 mt-2" placeholder='Monthly salary' onChange={inputSalary}/>
         <input value={extraSalary} type="text" className="extraSalary p-5 mt-2" placeholder='Extra salary' onChange={inputExtraSalary}/>
         <button className="next mt-2" onClick={next}>Next</button>
